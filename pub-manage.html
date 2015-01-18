@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="ie ie8" lang="zh-tw"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="zh-tw"> <!--<![endif]-->
+<head>
+
+<!-- Basic Page Needs
+================================================== -->
+<meta charset="utf-8">
+<title>Research Portal | National Taiwan University College of Medicine</title>
+
+<!-- Mobile Specific Metas
+================================================== -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!-- CSS
+================================================== -->
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/colors/celadon.css" id="colors">
+
+<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- Java Script
+================================================== -->
+<script src="scripts/jquery.min.js"></script>
+<script src="scripts/jquery.flexslider.js"></script>
+<script src="scripts/jquery.selectnav.js"></script>
+<script src="scripts/jquery.twitter.js"></script>
+<script src="scripts/jquery.modernizr.js"></script>
+<script src="scripts/jquery.easing.1.3.js"></script>
+<script src="scripts/jquery.contact.js"></script>
+<script src="scripts/jquery.isotope.min.js"></script>
+<script src="scripts/jquery.jcarousel.js"></script>
+<script src="scripts/jquery.fancybox.min.js"></script>
+<script src="scripts/jquery.transit-modified.js"></script>
+<script src="scripts/jquery.layerslider-transitions.js"></script>
+<script src="scripts/jquery.layerslider.min.js"></script>
+<script src="scripts/jquery.shop.js"></script>
+<script src="scripts/custom.js"></script>
+<script src="scripts/tooltip.min.js"></script>
+<script src="scripts/modal.min.js"></script>
+<script src="scripts/transition.min.js"></script>
+
+<!-- Altmetric / Source: http://api.altmetric.com/embeds.html
+================================================== -->
+<script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
+
+<!-- Facebook Open Graph Meta 預留到時候要套程式改 meta tag
+================================================== -->
+<meta property="fb:admins" content="#">
+<meta property="fb:app_id" content="#">
+<meta property="og:url" content="/pub-manage.html">
+<meta property="og:title" content="Manage Publications">
+<meta property="og:site_name" content="Research Portal | National Taiwan University College of Medicine"> 
+<meta property="og:description" content="Through Research Portal, it introduced our faculty’s outstanding research achievements, and we welcome the opportunities to extend the international collaboration.">
+<meta property="og:image" content="#">
+<meta property="og:type" content="article">
+
+</head>
+<body>
+
+<!-- Wrapper / 開始 -->
+<div id="wrapper">
+
+<!-- Header
+================================================== -->
+<div id="top-line"></div>
+
+<!-- 960 Container -->
+<div class="container floated header-bg">
+
+	<div class="header floated">
+
+	<!-- Header -->
+	<header id="header">
+
+		<!-- Logo -->
+		<div class="nine columns">
+			<div id="logo">
+				<h1><a href="#"><img src="images/logo.png" alt="學術研究入口網" /></a></h1>
+				<!-- <div id="tagline">National Taiwan University College of Medicine</div> -->
+				<div class="clearfix"></div>
+			</div>
+		</div>
+
+		<!-- Social / Contact -->
+		<div class="seven columns">
+
+			<!-- 頂端導覽列 -->
+			<nav id="top-menu">
+				<ul>
+					<li><a href="index.html" title="Home">Home</a></li>
+					<li><a href="#" title="Logout">Logout</a></li>
+					<li><a href="faq.html" title="FAQ's">FAQ's</a></li>
+					<li><a href="contact.html" title="Contact">Contact</a></li>
+					<li><a href="#" title="lang-tw">中文</a></li>
+				</ul>
+			</nav>	
+
+			<div class="clearfix"></div>
+
+		</div>
+	</header>
+	<!-- Header / 結束 -->
+
+	<div class="clearfix"></div>
+
+	</div>
+
+</div>
+<!-- 960 Container / 結束 -->
+
+
+<!-- 主選單
+================================================== -->
+<nav id="navigation" class="style-2">
+
+<div class="left-corner"></div>
+<div class="right-corner"></div>
+
+<ul class="menu" id="responsive">
+
+	<li><a href="index.html"><i class="halflings white home"></i> Portal</a></li>
+
+	<li><a href="profile-settings.html"><i class="halflings white user"></i> Shan-Chwen Chang</a></li>
+
+	<li><a href="pub-manage.html" id="current"><i class="halflings white pencil"></i>Publications</a></li>
+
+	<li><a href="news.html"><i class="halflings white cog"></i>Projects</a></li>
+
+</ul>
+</nav>
+
+<!-- 快速搜尋 -->
+<nav class="top-search">
+	<form action="404-page.html" method="get">
+		<button class="search-btn"></button>
+		<input class="search-field" type="text" onblur="if(this.value=='')this.value='Search';" onfocus="if(this.value=='Search')this.value='';" value="Search" />
+	</form>
+</nav>
+
+<div class="clearfix"></div>
+
+
+<!-- Content
+================================================== -->
+<div id="content">
+
+
+<!-- 960 Container -->
+<div class="container floated">
+
+	<div class="sixteen floated page-title">
+
+		<h2>Manage <span>/ Publications</span></h2>
+
+		<nav id="breadcrumbs">
+			<ul>
+				<li>You are here:</li>
+				<li><a href="index.html">Portal</a></li>
+				<li>Manage Publications</li>
+			</ul>
+		</nav>
+
+	</div>
+
+</div>
+<!-- 960 Container / 結束 -->
+
+
+<!-- Page Content -->
+<div class="page-content">
+
+
+<!-- 960 Container / 開始 -->
+<div id="pub-manage" class="container">
+
+	<div class="sixteen columns">
+
+			<!-- 說明訊息 
+			<div class="notification notice closeable" id="notification_1" style="display: block;">
+				<p>The following information only displays on this website and will not sync with your ORCID.</p>
+				<a class="close" href="#"><i class="icon-remove"></i></a>
+			</div>-->
+
+			<!-- 頁面載入自動開 Modal -->
+			<script type="text/javascript">
+				$(window).load(function(){
+					$('#pub-sync-orcid').modal('show');
+				});
+			</script>
+
+			<!-- 區段標題 -->
+			<h3 class="margin-reset"><span id="pub-count">2</span> Publications</h3>
+
+			<br>
+
+			<p>Ordered by publish date</p>
+
+			<div class="eleven columns alpha">
+				<p class="pub-sync-btn">
+				<!-- 添加著作按鈕 -->
+				<a href="pub-manage.html" id="add-pub-btn" class="button orange" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Add publications to your ORCID"><i class="halflings white plus"></i> Add Publications</a>
+
+				<!-- 取得 ORCID 著作按鈕 -->
+				<a href="/" id="fetch-orcid-btn" class="button blue" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Get publications from your ORCID"><i class="halflings white refresh"></i> Import from ORCID</a>
+
+				<!-- 匯入 FlyMed Scopus 著作按鈕 / 測試用，正式請拿掉改成自動觸發 -->
+				<a href="/" id="fetch-scopus-btn" class="button color" data-toggle="modal" data-target="#pub-sync-scopus"><i class="halflings white refresh"></i> Import from Scopus</a>
+				<p>
+			</div>
+
+			<div class="five columns omega">
+				<p class="pub-mng-btn">
+					<!-- 刪除按鈕 -->
+					<a href="#" id="pub-save" class="button light" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Delete checked publications">Delete Checked</a>
+					<!-- 下載按鈕 -->
+					<a href="#" id="pub-download" class="button color" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Download your publications as CSV">Download All</a>
+				</p>
+			</div>
+
+			<!-- 著作列表 / 開始 -->
+			<table id="" class="standard-table pub-list">
+				<tbody>
+					<tr>
+						<th class="pub-altmetric">Altmetric <i class="icon-question-sign" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="Altmetric collects article level metrics and the online conversations around research on behalf of publishers, institutions and funders, combining a selection of online indicators (both scholarly and non-scholarly) to give a measurement of digital impact and reach."></i></th>
+						<th>Publications</th>
+						<th class="pub-list-chk">
+							<!-- 全選功能 -->
+							All	<input type="checkbox" name="pub-checkall" value="">
+						</th>
+					</tr>
+
+					<tr>
+						<td class="pub-altmetric">
+							<!-- Altmetric / data-doi 或 data-pmid -->
+							<div class='altmetric-embed' data-badge-popover='right' data-link-target='_blank' data-badge-type='donut' data-hide-no-mentions="false" data-doi='10.1016/j.diagmicrobio.2011.03.003' data-pmid='21558048'></div>
+						</td>
+						<td class="pub-list-item">
+							<!-- 標題 -->
+							<span class="pub-title">Comparative in vitro antimicrobial susceptibilities and synergistic activities of antimicrobial combinations against carbapenem-resistant Acinetobacter species: Acinetobacter baumannii versus Acinetobacter genospecies 3 and 13TU</span>
+							<!-- 作者 -->
+							<span class="pub-author">Sheng WH, Wang JT, Li SY, Lin YC, Cheng A, Chen YC, Chang SC</span>
+							<!-- 刊名 + 卷期 + 出版年 -->
+							<span class="pub-citation">Diagnostic Microbiology and Infectious Disease - DIAGN MICROBIOL INFECT DIS, vol. 70, no. 3, pp. 380-386, 2011</span>
+							<!-- DOI -->
+							<span class="pub-link"><i class="halflings info-sign"></i>DOI: <a href="http://dx.doi.org/10.1016/j.diagmicrobio.2011.03.003" target="_blank">10.1016/j.diagmicrobio.2011.03.003</a></span>
+							<!-- PMID -->
+							<span class="pub-link"><i class="halflings eye-open"></i>View in: <a href="http://www.ncbi.nlm.nih.gov/pubmed/21558048" target="_blank">PubMed</a></span>
+						</td>
+						<td class="pub-list-chk">
+							<input type="checkbox" name="pub-checkall" value="">
+						</td>
+					</tr>
+
+					<tr>
+						<td class="pub-altmetric">
+							<!-- Altmetric / data-doi 或 data-pmid -->
+							<div class='altmetric-embed' data-badge-popover='right' data-link-target='_blank' data-badge-type='donut' data-hide-no-mentions="false" data-doi='10.1371/journal.pone.0027163'></div>
+						</td>
+						<td class="pub-list-item">
+							<!-- 標題 -->
+							<span class="pub-title">Effectiveness and Limitations of Hand Hygiene Promotion on Decreasing Healthcare–Associated Infections</span>
+							<!-- 作者 -->
+							Chen YC, Sheng WH, Wang JT, Chang SC, Lin HC, Tien KL, Hsu LY, Tsai KS.
+				    		<!-- 刊名 + 卷期 + 出版年 -->
+				    		<span class="pub-citation">PLOS One, vol. 6, no. 11, 2011</span>
+				    		<!-- DOI -->
+				    		<span class="pub-link"><i class="halflings info-sign"></i>DOI: <a href="http://dx.doi.org/10.1371/journal.pone.0027163" target="_blank">10.1371/journal.pone.0027163</a></span>
+				    		<!-- PMID -->
+				    		<span class="pub-link"><i class="halflings eye-open"></i>View in: <a href="http://www.ncbi.nlm.nih.gov/pubmed/22110610" target="_blank">PubMed</a></span>
+				    		<!-- PMC -->
+				    		<span class="pub-link"><i class="halflings eye-open"></i>View in: <a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3217962" target="_blank">PubMed Central</a></span>
+				    		<!-- URL -->
+				    		<span class="pub-link"><i class="halflings eye-open"></i>View in: <a href="http://dx.plos.org/10.1371/journal.pone.0027163" target="_blank">HTML</a></span>
+						</td>
+						<td class="pub-list-chk">
+							<input type="checkbox" name="pub-checkall" value="">
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<!-- 著作列表 / 結束 -->
+
+			<p class="pub-mng-btn">
+				<!-- 刪除按鈕 -->
+				<a href="#" id="pub-save" class="button light" data-toggle="popover" data-placement="bottom" data-trigger="hover" data-content="Delete checked publications">Delete Checked</a>
+				<!-- 下載按鈕 -->
+				<a href="#" id="pub-download" class="button color" data-toggle="popover" data-placement="bottom" data-trigger="hover" data-content="Download your publications as CSV">Download All</a>
+			</p>
+
+	</div>
+
+</div>
+<!-- 960 Container / 結束 -->
+
+</div>
+<!-- Page Content / 結束 -->
+
+</div>
+<!-- Content / 結束 -->
+
+</div>
+<!-- Wrapper / 結束 -->
+
+
+<!-- ORCID to Portal / 開始 -->
+<div class="modal fade" id="pub-sync-orcid" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+
+			<div class="modal-header">
+
+				<!-- 關閉按鈕 / 測試用，正式請拿掉 -->
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+
+				<!-- Modal 標題 -->
+				<h3 class="modal-title" id="myModalLabel">Import from ORCID</h3>
+
+			</div>
+
+			<div class="modal-body">
+
+				<!-- 說明訊息 -->
+				<div class="notification warning closeable" id="notice-3" style="display: block;">
+					<p><span>Attention!</span><br>The list below is your publications we pulled from your ORCID works and not in our database. They will now being saved and add to your profile here.</p>
+					<a class="close" href="#"><i class="icon-remove"></i></a>
+				</div>
+
+				<!-- 無新著作訊息 -->
+				<div class="notification warning closeable" id="notice-4" style="display: block;">
+					<p>No new publications from your ORCID.</p>
+					<a class="close" href="#"><i class="icon-remove"></i></a>
+				</div>
+
+				<!-- 錯誤訊息 -->
+				<div class="notification error closeable" id="notice-5" style="display: block;">
+					<p><span>Error!</span> Due to some technical issue, we can't fetch your publications from ORCID right now. Please try it again later or contact us for further information.</p>
+					<a class="close" href="#"><i class="icon-remove"></i></a>
+				</div>
+
+				<!-- 自 ORCID 撈回著作清單 / 開始 -->
+				<table id="" class="standard-table pub-list">
+					<tbody>
+						<tr>
+							<th>Publications</th>
+						</tr>
+
+						<tr>
+							<td class="pub-list-item">
+								<!-- 標題 -->
+								<span class="pub-title">Comparative in vitro antimicrobial susceptibilities and synergistic activities of antimicrobial combinations against carbapenem-resistant Acinetobacter species: Acinetobacter baumannii versus Acinetobacter genospecies 3 and 13TU</span>
+								<!-- 作者 -->
+								<span class="pub-author">Sheng WH, Wang JT, Li SY, Lin YC, Cheng A, Chen YC, Chang SC</span>
+								<!-- 刊名 + 卷期 + 出版年 -->
+								<span class="pub-citation">Diagnostic Microbiology and Infectious Disease - DIAGN MICROBIOL INFECT DIS, vol. 70, no. 3, pp. 380-386, 2011</span>
+							</td>
+						</tr>
+
+						<tr>
+							<td class="pub-list-item">
+								<!-- 標題 -->
+								<span class="pub-title">Effectiveness and Limitations of Hand Hygiene Promotion on Decreasing Healthcare–Associated Infections</span>
+								<!-- 作者 -->
+								Chen YC, Sheng WH, Wang JT, Chang SC, Lin HC, Tien KL, Hsu LY, Tsai KS.
+					    		<!-- 刊名 + 卷期 + 出版年 -->
+					    		<span class="pub-citation">PLOS One, vol. 6, no. 11, 2011</span>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<!-- 自 ORCID 撈回著作清單 / 結束 -->
+
+			</div>
+
+			<div class="modal-footer">
+				<button type="button" class="button color medium">Done</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- ORCID to Portal / 結束 -->
+
+<!-- Custom Scopus to Portal / 開始 -->
+<div class="modal fade" id="pub-sync-scopus" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+
+			<div class="modal-header">
+
+				<!-- 關閉按鈕 / 測試用，正式請拿掉 -->
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+
+				<!-- Modal 標題 -->
+				<h3 class="modal-title" id="myModalLabel">Import from Scopus</h3>
+
+			</div>
+
+			<div class="modal-body">
+
+				<!-- 說明訊息 -->
+				<div class="notification warning closeable" id="notice-3" style="display: block;">
+					<p><span>Attention!</span><br>We've found following publications in Scopus that match your name, please carefully confirm authorship of your publications to add them to your profile and ORCID.</p>
+					<a class="close" href="#"><i class="icon-remove"></i></a>
+				</div>
+
+				<!-- 無新著作訊息 -->
+				<div class="notification warning closeable" id="notice-4" style="display: block;">
+					<p>No new publications match your name in Scopus.</p>
+					<a class="close" href="#"><i class="icon-remove"></i></a>
+				</div>
+
+				<!-- 錯誤訊息 -->
+				<div class="notification error closeable" id="notice-5" style="display: block;">
+					<p><span>Error!</span> Due to some technical issue, we can't fetch your publications right now. Please try it again later or contact us for further information.</p>
+					<a class="close" href="#"><i class="icon-remove"></i></a>
+				</div>
+
+				<!-- 自 Scopus 撈回著作清單 / 開始 -->
+				<table id="" class="standard-table pub-list">
+					<tbody>
+						<tr>
+							<th>Publications</th>
+							<th class="pub-list-chk">
+								<!-- 全選功能 -->
+								All	<input type="checkbox" name="pub-checkall" value="">
+							</th>
+						</tr>
+
+						<tr>
+							<td class="pub-list-item">
+								<!-- 標題 -->
+								<span class="pub-title">Comparative in vitro antimicrobial susceptibilities and synergistic activities of antimicrobial combinations against carbapenem-resistant Acinetobacter species: Acinetobacter baumannii versus Acinetobacter genospecies 3 and 13TU</span>
+								<!-- 作者 -->
+								<span class="pub-author">Sheng WH, Wang JT, Li SY, Lin YC, Cheng A, Chen YC, Chang SC</span>
+								<!-- 刊名 + 卷期 + 出版年 -->
+								<span class="pub-citation">Diagnostic Microbiology and Infectious Disease - DIAGN MICROBIOL INFECT DIS, vol. 70, no. 3, pp. 380-386, 2011</span>
+							</td>
+							<td class="pub-list-chk">
+								<input type="checkbox" name="pub-checkall" value="">
+							</td>
+						</tr>
+
+						<tr>
+							<td class="pub-list-item">
+								<!-- 標題 -->
+								<span class="pub-title">Effectiveness and Limitations of Hand Hygiene Promotion on Decreasing Healthcare–Associated Infections</span>
+								<!-- 作者 -->
+								Chen YC, Sheng WH, Wang JT, Chang SC, Lin HC, Tien KL, Hsu LY, Tsai KS.
+					    		<!-- 刊名 + 卷期 + 出版年 -->
+					    		<span class="pub-citation">PLOS One, vol. 6, no. 11, 2011</span>
+							</td>
+							<td class="pub-list-chk">
+								<input type="checkbox" name="pub-checkall" value="">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<!-- 自 ORCID 撈回著作清單 / 結束 -->
+
+			</div>
+
+			<div class="modal-footer">
+				<button type="button" class="button color medium">Save</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Custom Scopus to Portal / 結束 -->
+
+
+<!-- Footer
+================================================== -->
+
+<!-- Footer Bottom / 開始 -->
+<footer id="footer-bottom">
+
+	<!-- 960 Container -->
+	<div class="container">
+
+		<!-- Copyrights -->
+		<div class="nine columns">
+			<div class="copyright">
+				© Copyright 2013 by <a href="http://www.mc.ntu.edu.tw/" target="_blank">National Taiwan University College of Medicine</a>. All Rights Reserved.<br>
+				No.1, Section 1, Jen Ai Rd., Taipei, 10051, Taiwan, R.O.C.<br>
+				10051 台北市中正區仁愛路一段一號
+			</div>
+		</div>
+
+		<!-- Counter -->
+		<div class="three columns counter">
+			<ul class="sitemap-alt">
+				<li><i class="halflings white user"></i> <p>Currently Online：5</p><p></p></li>
+				<li><i class="halflings white calendar"></i> <p>Views Today：1,152 </p><p></p></li>
+				<li><i class="halflings white globe"></i> <p>Total Views：12,458 </p></li>
+			</ul>
+		</div>
+
+		<!-- Menu -->
+		<div class="four columns">
+			<nav id="sub-menu">
+				<ul>
+					<li><a href="#">FAQ's</a></li>
+					<li><a href="#">Sitemap</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+
+	</div>
+	<!-- 960 Container / 結束 -->
+
+</footer>
+<!-- Footer Bottom / 結束 -->
+
+
+<!-- Back To Top Button -->
+<div id="backtotop"><a href="#"></a></div>
+
+
+</body>
+</html>
