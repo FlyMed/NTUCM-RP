@@ -1269,7 +1269,10 @@ li.journal-item {
 
 .pub-title,
 .pub-author,
+.pub-author-text,
+.pub-time,
 .pub-citation,
+.pub-gadget,
 .pub-link,
 .journal-title,
 .journal-ISSN,
@@ -1284,15 +1287,27 @@ li.journal-item {
 	color: #333;
 }
 
+.pub-title > a,
+.journal-title > a {
+	color: #333;
+}
+
 .pub-author,
+.pub-author-text,
+.pub-time,
 .pub-citation {
 	margin-bottom: 2px;
 	color: #888;
 }
 
+ul.pub-author-list { list-style: none; margin: 0; padding: 0; }
+ul.pub-author-list li { display: inline; }
+ul.pub-author-list li:after { content: ","; }
+ul.pub-author-list li:last-child:after { content: ""; }
+
 .pub-item .altmetric-embed {
 	height: 21px;
-	margin-top: 6px;
+	margin: 6px 0;
 }
 
 .pub-link,
@@ -1303,22 +1318,10 @@ li.journal-item {
 	line-height: 21px;
 }
 
-.pub-link i.halflings,
-.journal-ISSN i.halflings {
-	display: inline-block;
-	opacity: 0.53;
-	filter: alpha(opacity=53);
-	margin: 2px 5px 0 0;
-}
+.pub-item i.halflings {	display: inline-block; opacity: 0.53; filter: alpha(opacity=53); margin: 2px 5px 0 0; }
+.pub-item i.halflings:before { color: #a5a5a5; }
 
-.pub-link i.halflings:before,
-.journal-ISSN i.halflings:before {
-	color: #a5a5a5;
-}
-
-.pub-count {
-	float: right;
-}
+.pub-count { float: right; }
 
 
 /* =================================================================== */
@@ -3699,6 +3702,7 @@ span.time {
 
 #pub-list .journal-title,
 #pub-list .pub-author,
+#pub-list .pub-author-text,
 #pub-list .pub-type,
 #journal-list .journal-title,
 #journal-list .journal-ISSN,
