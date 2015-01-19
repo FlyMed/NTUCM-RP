@@ -1253,9 +1253,7 @@ html[xmlns] .slides {display: block;}
 /* Publications & Journals
 ====================================================================== */
 li.pub-item,
-li.journal-item {
-	margin-bottom: 10px;
-}
+li.journal-item { margin-bottom: 10px; }
 
 .pub-item:after,
 .journal-item:after {
@@ -1276,9 +1274,9 @@ li.journal-item {
 .pub-link,
 .journal-title,
 .journal-ISSN,
-.pub-count {
-	display: block;
-}
+.pub-count { display: block; }
+
+.pub-gadget > * { display: inline-block; vertical-align: middle; margin-right: 12px; }
 
 .pub-title,
 .journal-title {
@@ -1288,27 +1286,17 @@ li.journal-item {
 }
 
 .pub-title > a,
-.journal-title > a {
-	color: #333;
-}
+.journal-title > a { color: #333; }
 
 .pub-author,
 .pub-author-text,
 .pub-time,
-.pub-citation {
-	margin-bottom: 2px;
-	color: #888;
-}
+.pub-citation { margin-bottom: 2px;	color: #888; }
 
 ul.pub-author-list { list-style: none; margin: 0; padding: 0; }
 ul.pub-author-list li { display: inline; }
 ul.pub-author-list li:after { content: ","; }
 ul.pub-author-list li:last-child:after { content: ""; }
-
-.pub-item .altmetric-embed {
-	height: 21px;
-	margin: 6px 0;
-}
 
 .pub-link,
 .journal-ISSN {
